@@ -1,0 +1,7 @@
+[
+    {"name" : "依靠" , "src" : "img/commodity/依靠.jpg" , "price" : 80},
+    {"name" : "星空" , "src" : "img/commodity/星空.jpg" , "price" : 80},
+    {"name" : "等待" , "src" : "img/commodity/等待.jpg" , "price" : 80},
+    {"name" : "童話" , "src" : "img/commodity/童話.jpg" , "price" : 80},
+    {"name" : "真心" , "src" : "img/commodity/真心.jpg" , "price" : 80}
+]
