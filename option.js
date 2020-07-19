@@ -19,10 +19,10 @@ var final = [{"name" : "" , "src" : "" , "price" : 0 , "num" : 0}];
 LoadCommodity();
 async function LoadCommodity(){
     await fetch('commodity.json')
-    .then(function(response){
+    .then(await function(response){
         return response.json();
     })
-    .then(function(myJson){
+    .then(await function(myJson){
         for(var i=0; i<myJson.length; i++){
             var node = document.createElement("div");
             node.classList.add('item');
