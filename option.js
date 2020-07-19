@@ -90,8 +90,19 @@ function confirm(){
     }
     else{
         var cart = JSON.parse(Cart);
-        cart.push(final[0]);
-        localStorage.setItem('Cart',JSON.stringify(cart));
+        var index = $.map(cart, function(item, index) {
+            return item.name;
+          }).indexOf(final[0].name);
+          console.log(index);
+        if(index==-1){
+            cart.push(final[0]);
+            localStorage.setItem('Cart',JSON.stringify(cart));
+        }
+        else{
+            cart[index].num = cart[index].num+final[0].num;
+            localStorage.setItem('Cart',JSON.stringify(cart));
+        }
+        
     }
     $(checkoutBack).hide();
     checkout.style.bottom = "-100px";
