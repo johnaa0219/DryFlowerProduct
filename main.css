@@ -45,6 +45,7 @@ body{
     height: 80px;
     width: 80px;
     border-radius: 100%;
+    margin-left: 2%;
 }
 .secList{
     width: 100%;
@@ -149,8 +150,10 @@ body{
     height: 35vh;
     width: auto;
 }
-@keyframes big{
-    transform: scale(1.1);
+.footer{
+    height: 150px;
+    width: 100%;
+    background-color: rosybrown;;
 }
 .checkout{
     height: 100px;
