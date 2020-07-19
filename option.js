@@ -17,10 +17,10 @@ var checkoutBack = document.querySelector('.checkoutback');
 var checkButton = document.querySelector('.checkbutton');
 var final = [{"name" : "" , "src" : "" , "price" : 0 , "num" : 0}];
 fetch('commodity.json')
-.then(function(response){
+.then(async function(response){
     return response.json();
 })
-.then(function(myJson){
+.then(async function(myJson){
     for(var i=0; i<myJson.length; i++){
         var node = document.createElement("div");
         node.classList.add('item');
